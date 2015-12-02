@@ -3,13 +3,25 @@
 <head>
 <title>Gerry Ilagan on GitHub</title>
 <style>
+.clearfix {
+	clear: both;
+}
+.clearfix:after, .clearfix:before {
+	content: "";
+	height: 0;
+}
 #photo-id-box {
-	border: #999999 solid 1px;
+	background-color: #eee;
+	border: #999 solid 1px;
+	clear: both;
+}
+#photo-id {
+	float: left;
 }
 </style>
 </head>
 <body>
 <h1 style="text-align:center;font-size:36px;">GitHub site of Gerry Ilagan</h1>
-<div id="photo-id-box"><img src="images/igerry-photo.jpg" alt="Gerry's Photo" /></div>
+<div id="photo-id-box" class="clearfix"><img id="photo-id" src="images/igerry-photo.jpg" alt="Gerry's Photo" /></div>
 </body>
 <bhtml>
