@@ -26,7 +26,18 @@
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
-          
+            
+            {% if site.author.web_site %}
+              <!-- Web Site -->
+              <li class="navigation__item">
+                <a href="{{ site.author.web_site }}" title="{{ site.title }}" target="_blank">
+                  <i class="icon icon-web"></i>
+                  <span class="label">Web Site</span>
+                </a>
+              </li>
+            {% endif %}
+
+        
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">

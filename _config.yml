@@ -9,6 +9,7 @@ baseurl: '/'
 author:
   name: 'Gerry Ilagan'
   email: 
+  web_site: http://igerry.com
   twitter_username: igerry
   facebook_username: ilagan.gerry
   github_username:  gerryilagan
