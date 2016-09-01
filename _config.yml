@@ -1,0 +1,39 @@
+# Site settings
+title: Gerry Ilagan
+description: 'The GitHub Site of Gerry Ilagan'
+url: 'http://gerryilagan.github.io.com/'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Gerry Ilagan'
+  email: 
+  twitter_username: igerry
+  facebook_username: ilagan.gerry
+  github_username:  gerryilagan
+  linkedin_username:  gerryilagan
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
